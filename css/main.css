@@ -4,6 +4,11 @@ body {
   font-family: "Arial Rounded MT";
 }
 
+.skill-desc {
+  font-family: "Arial";
+  font-size: 0.8em;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -23,6 +28,10 @@ img {
 }
 .nav-container a {
   color: white;
+}
+
+.social-2 {
+  display: none;
 }
 
 header {
@@ -111,11 +120,12 @@ section {
 .featured-desc {
   color: #252525;
   margin-bottom: 3em;
-  font-size: 0.7em;
+  font-size: 0.6em;
   line-height: 1.5em;
   font-weight: 500;
   list-style-position: inside;
   font-family: "Arial";
+  list-style: disc;
 }
 
 .skills {
@@ -126,7 +136,7 @@ section {
   background: white;
   padding: 2em;
   border-radius: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0.1em;
 }
 .skills-container ul li .icon-container {
   height: 100px;
@@ -158,9 +168,45 @@ section {
 }
 
 @media only screen and (min-width: 800px) {
+  .portfolio-desc {
+    text-align: left;
+  }
+  .social-2 {
+    padding-top: 0.5em;
+    display: block;
+    padding-left: 2.85em;
+  }
+  .social-2 ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 6em;
+    float: left;
+  }
+  .social-2 img {
+    width: 20px;
+  }
+  .featured-desc {
+    text-align: left;
+    padding-top: 3.5em;
+    padding-left: 6.3em;
+  }
+  .subtitle {
+    text-align: left;
+    padding-top: 5.3em;
+    padding-left: 4.7em;
+  }
+  .featured-title {
+    text-align: left;
+    padding-left: 3em;
+  }
   .featured, .portfolio-container {
     display: grid;
     grid-template-columns: 40% auto;
+    padding-bottom: 8em;
+  }
+  .featured-img {
+    max-width: 400px;
+    padding-top: 6.5em;
   }
   .left, .portfolio-left {
     display: grid;
@@ -172,7 +218,6 @@ section {
   }
   .skills {
     margin-top: -5em;
-    margin-bottom: -7em;
     padding-top: 7em;
   }
   .skills-container ul {
