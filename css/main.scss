@@ -168,13 +168,9 @@ section{
     background: #F7F7F7; 
 }
 
-.portfolio-container{
-    border-radius: 1em;
-    margin-bottom: 3em;
-    li{
-            font-family: 'Arial';
-            font-size: 0.7em;
-    }
+
+.portfolio-desc{
+    padding-top: 10em;
 }
 
 @media only screen and (min-width:800px){
@@ -198,6 +194,22 @@ section{
             width: 20px;
         }
     }
+
+    .social-3{
+        padding-top: 0.5em;
+        display: block;
+        padding-left:2em;
+            
+        ul{
+            display: flex;
+            width: 6em; 
+            float: left;
+        }
+
+        img{
+            width: 20px;
+        }
+    }
     
     .featured-desc{
         text-align: left;
@@ -215,13 +227,10 @@ section{
     }
     .featured, .portfolio-container{
         display: grid; 
-        grid-template-columns: 40% auto;
+        grid-template-columns: 50% 50%;
         padding-bottom: 8em;
     }
-    .featured-img{
-        max-width: 400px;
-        padding-top: 6.5em;
-    }
+
 
     .left, .portfolio-left {
         display: grid;
@@ -294,6 +303,7 @@ section{
 
         img{
             width: 20px;
+
         }
     }
 
