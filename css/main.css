@@ -45,6 +45,9 @@ header ul a {
   display: block;
   padding: 0 1em;
 }
+header li:hover {
+  opacity: 0.5;
+}
 
 .social-header {
   display: none;
@@ -185,6 +188,9 @@ section {
 .social-2 img {
   width: 20px;
 }
+.social-2 img:hover {
+  opacity: 0.5;
+}
 
 .social-3 {
   padding-top: 0.5em;
@@ -197,6 +203,9 @@ section {
 }
 .social-3 img {
   width: 20px;
+}
+.social-3 img:hover {
+  opacity: 0.5;
 }
 
 @media only screen and (min-width: 900px) {
@@ -317,6 +326,9 @@ section {
   }
   .social-header img {
     width: 20px;
+  }
+  .social-header img:hover {
+    opacity: 0.5;
   }
   .hero {
     display: grid;
