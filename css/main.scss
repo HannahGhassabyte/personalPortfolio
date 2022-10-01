@@ -31,10 +31,6 @@ img {
     }
 }
 
-.social-2{
-    display: none;
-}
-
 
 header{
     display:flex;
@@ -129,9 +125,8 @@ section{
     font-size: 0.6em; 
     line-height: 1.5em; 
     font-weight: 500; 
-    list-style-position: inside;
     font-family: 'Arial';
-    list-style:disc;
+    list-style:none;
 }
 
 .skills{ 
@@ -171,6 +166,36 @@ section{
 
 .portfolio-desc{
     padding-top: 10em;
+}
+
+.social-2{
+    padding-top: 0.5em;
+    display: inline-block;
+    
+    ul{
+        display:flex;
+        justify-content:space-evenly;
+        width: 6em; 
+    }
+
+    img{
+        width: 20px;
+    }
+}
+
+.social-3{
+    padding-top: 0.5em;
+    display: inline-block;
+    
+    ul{
+        display:flex;
+        justify-content:space-evenly;
+        width: 6em; 
+    }
+
+    img{
+        width: 20px;
+    }
 }
 
 @media only screen and (min-width:800px){
@@ -259,6 +284,9 @@ section{
     
     .portfolio-container img{
         margin-left: 2em;
+    }
+    .featured-desc{
+        list-style: disc;
     }
 }
 
