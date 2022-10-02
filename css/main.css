@@ -56,6 +56,10 @@ header li:hover {
   display: none;
 }
 
+.social-header-2 {
+  display: none;
+}
+
 .hero-design {
   display: none;
 }
@@ -191,6 +195,14 @@ section {
   width: 90px;
 }
 
+.bottom-header {
+  padding-bottom: 0em;
+}
+
+.bottom-header .logo {
+  padding-bottom: 0em;
+}
+
 .portfolio {
   background: #F7F7F7;
 }
@@ -231,7 +243,52 @@ section {
   opacity: 0.5;
 }
 
+.bottom-header {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-header .logo {
+  padding-left: 1.5em;
+}
+
+.contact {
+  background: #6700EE;
+  color: #00F7FF;
+  font-weight: 300;
+  padding-bottom: 1.5em;
+  font-size: 10px;
+  padding-left: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact li {
+  display: flex;
+  justify-content: center;
+}
+
+.contact nav {
+  display: none;
+}
+
 @media only screen and (min-width: 1100px) {
+  .contact {
+    display: block;
+    padding-left: 4.75em;
+    justify-content: left;
+  }
+  .contact li {
+    justify-content: left;
+  }
+  .contact nav {
+    display: contents;
+  }
+  .bottom-header {
+    justify-content: left;
+    padding-left: 2.5em;
+  }
   .portfolio img {
     display: inline-block;
   }
@@ -323,6 +380,9 @@ section {
   }
 }
 @media only screen and (min-width: 1100px) {
+  .contact {
+    padding-left: 6.5em;
+  }
   .hero {
     height: 90vh;
   }
@@ -330,6 +390,22 @@ section {
     display: grid;
     grid-template-columns: 66% auto;
     background: unset;
+  }
+  .contact nav ul {
+    display: flex;
+    font-family: "Poppins";
+    font-weight: 700;
+    padding-left: 0.1em;
+  }
+  .contact nav ul li {
+    padding-top: 1.5em;
+    padding-right: 1em;
+  }
+  .contact nav ul a {
+    color: white;
+  }
+  .contact nav ul a:hover {
+    opacity: 0.5;
   }
   header {
     background: #6700EE;
@@ -339,6 +415,23 @@ section {
   }
   .social-header {
     padding: 2em 4em 2em 0;
+  }
+  .social-header-2 {
+    background-color: #6E00EE;
+    padding: 2em 4em 0em 0em;
+    display: block;
+  }
+  .social-header-2 ul {
+    display: flex;
+    justify-content: space-between;
+    width: 7em;
+    float: right;
+  }
+  .social-header-2 img {
+    width: 20px;
+  }
+  .social-header-2 img:hover {
+    opacity: 0.5;
   }
   section {
     padding: 4em;
@@ -397,6 +490,12 @@ section {
   }
 }
 @media only screen and (min-width: 1250px) {
+  .social-header-2 {
+    padding-right: 14em;
+  }
+  .contact {
+    padding-left: 16em;
+  }
   header {
     padding: 2em 2em 2em 10em;
   }
@@ -412,8 +511,20 @@ section {
   .hero .content {
     padding: 6em 8em 6em 10em;
   }
+  .bottom-header .logo {
+    padding-left: 7.5em;
+  }
 }
 @media only screen and (min-width: 1550px) {
+  .bottom-header .logo {
+    padding-left: 17.5em;
+  }
+  .contact {
+    padding-left: 32em;
+  }
+  .social-header-2 {
+    padding-right: 28em;
+  }
   header {
     padding: 2em 2em 2em 20em;
   }
