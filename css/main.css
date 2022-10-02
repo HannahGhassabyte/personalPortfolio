@@ -6,6 +6,10 @@ body {
   font-weight: 700;
 }
 
+.white-space {
+  height: 2em;
+}
+
 .skill-desc {
   font-family: "Poppins";
   font-weight: 300;
