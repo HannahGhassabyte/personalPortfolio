@@ -16,8 +16,8 @@
             <nav>
                 <ul>
                     <li> <a href = "#skills">My skills</a></li>
-                    <li> <a href = "#portfolio">My work</a></li>
                     <li> <a href = "#portfolio">My projects</a></li>
+                    <li> <a href = "#interests">My interests</a></li>
                 </ul>
             </nav>
         </header>
@@ -276,6 +276,38 @@
         </div>
     </div>
 
+    <section id = "interests" class = "interests"> 
+        <div class="interests-container">
+            <ul class = "interests-list">
+                <li class = tranisition4>
+                    <div class = interests-img-container>
+                        <img src="assets/skiing.svg" alt = "Skiing Icon">
+                    </div>
+                    <p class = "interests-title">Downhill Skiing</p>
+                </li>
+                <li class = tranisition4>
+                    <div class = interests-img-container>
+                        <img src="assets/cooking.svg" alt = "Cooking Icon">
+                    </div>
+                    <p class = "interests-title">Cooking & Baking</p>
+                </li>
+                <li class = tranisition4>
+                    <div class = interests-img-container>
+                        <img src="assets/climbing.svg" alt = "Climbing Icon">
+                    </div>
+                    <p class = "interests-title">Rock Climbing</p>
+                </li>
+                <li class = tranisition4>
+                    <div class = interests-img-container>
+                        <img src="assets/gaming.svg" alt = "Gaming Icon">
+                    </div>
+                    <p class = "interests-title">Gaming</p>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
 </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -321,6 +353,17 @@
         gsap.from(".transition3", {
             scrollTrigger:{
                 trigger: '.transition3', 
+                start: "top bottom"
+
+            }, 
+            y: 50, 
+            opacity: 0, 
+            duration: 1.2, 
+            stagger: .9
+        })
+        gsap.from(".transition4", {
+            scrollTrigger:{
+                trigger: '.transition4', 
                 start: "top bottom"
 
             }, 

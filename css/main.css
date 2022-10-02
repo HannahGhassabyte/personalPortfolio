@@ -145,6 +145,26 @@ section {
   list-style: none;
 }
 
+.interests {
+  background: #E5D5FA;
+}
+
+.interests-container ul li {
+  background: white;
+  padding: 2em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+.interests-container ul li .interests-img-container {
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+}
+
+.interests-title {
+  color: #FF64CB;
+}
+
 .skills {
   background: #FF64CB;
 }
@@ -271,6 +291,11 @@ section {
     margin-left: 2em;
     margin-top: 1em;
   }
+  .interests-container ul {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 1em;
+  }
   .skills {
     margin-top: -5em;
     padding-top: 7em;
@@ -279,6 +304,9 @@ section {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 1em;
+  }
+  .interests-img-container {
+    width: 100px;
   }
   .featured-desc {
     list-style: disc;
