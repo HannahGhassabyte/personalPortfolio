@@ -133,12 +133,12 @@ section{
 .subtitle{
     color: #6E00FF;
     letter-spacing: .2em; 
-    font-size: .85em;
+    font-size: 1em;
 }
 
 .featured-title{
     color: black; 
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin-top: -.4em; 
     display: block;
 }
@@ -146,7 +146,7 @@ section{
 .featured-desc{
     color: #252525; 
     margin-bottom: 3em; 
-    font-size: 0.6em; 
+    font-size: 0.8em; 
     line-height: 1.5em; 
     font-weight: 500; 
     font-family: 'Poppins';
@@ -229,7 +229,7 @@ section{
     }
 }
 
-@media only screen and (min-width:900px){
+@media only screen and (min-width:1100px){
     
     .portfolio img{
         display: inline-block;
@@ -237,7 +237,7 @@ section{
     .social-2{
         padding-top: 0.5em;
         display: block;
-        padding-left:2.85em;
+        padding-left:3.4em;
             
         ul{
             display: flex;
@@ -254,7 +254,7 @@ section{
     .social-3{
         padding-top: 0.5em;
         display: block;
-        padding-left:3em;
+        padding-left:3.7em;
             
         ul{
             display: flex;
@@ -271,7 +271,7 @@ section{
     .featured-desc{
         text-align: left;
         padding-top: 3.5em;
-        padding-left: 7.6em;
+        padding-left: 6.8em;
     }
     .subtitle{
         text-align: left;
@@ -409,10 +409,18 @@ section{
         width: 100%; 
     }
 
-    .portfolio img{
-        float:right;
+    .portfolio-container img{
+        float: inline-block;
         max-width: 500px;
         max-height:500px;
+
+    }
+
+    .img-container{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+
     }
 }
 
